@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<title>Đăng Nhập | Đăng ký</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Clean Login Form Responsive, Login Form Web Template, Flat Pricing Tables, Flat Drop-Downs, Sign-Up Web Templates, Flat Web Templates, Login Sign-up Responsive Web Template, Smartphone Compatible Web Template, Free Web Designs for Nokia, Samsung, LG, Sony Ericsson, Motorola Web Design" />
+<link href="./dangnhap1.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css" />
+<body>
+<div class="dangnhap">
+	<div class="dn">
+        <div id="dau" class="dau">
+        	<h1>     </h1>
+				<div class="chinh">
+					<div class="giua">
+							<h2>Đăng nhập ngay</h2>
+							<form action="#" method="post">
+								<div class="form-sub-w3">
+									<input type="text" name="Username" maxlength="4" placeholder="Mã xác nhận" required="" />
+								</div>
+								<div class="form-sub-w3">
+									<input type="password" name="Password" id="mk" placeholder="Mật khẩu mới" required="" />
+								<div class="icon-w3">
+									<i class="fa fa-unlock-alt" aria-hidden="true"></i>
+								</div>
+								<span id="loimk" style="color: yellow; position: absolute; top: 59px;"></span>
+								</div>
+								<div class="form-sub-w3">
+									<input type="password" id="mk2" name="Password" placeholder="Xác nhận mật khẩu mới" required="" />
+								<div class="icon-w3">
+									<i class="fa fa-unlock-alt" aria-hidden="true"></i>
+								</div>
+								<span id="loimk2" style="color: yellow; position: absolute; top: 62px;"></span>
+								</div>
+								<p class="p-bottom-w3ls1"><a href="./dangnhap1.html" target="_b">Đăng nhập &nbsp</a><a href="./pk.html" target="_b">Trang chủ</a></p>
+								<div class="clear"></div>
+								<div class="submit-w3l" style="padding-bottom: 15px;">
+									<input type="submit" onclick=" return KiemTraDK();" formaction="./dangnhap1.html" value="Xác nhận">
+								</div>
+								<p class="p-bottom-w3ls">Mã xác nhận đã được gửi qua thư điện tử</p>
+							</form>
+							
+					</div>
+				</div>
+		</div>
+	</div>	
+</div>
+<script type="text/javascript">
+	function KiemTraDK(){
+	var matkhau=document.getElementById('mk').value;
+	var matkhau2=document.getElementById('mk2').value;
+	var loi2=0,loi3=0,loi4=0;
+	if(matkhau==""){
+		document.getElementById('loimk').innerHTML="Vui lòng nhập mật khẩu !";loi2=1;
+	}else{
+		document.getElementById('loimk').innerHTML="";loi2=0;
+	}
+	if(matkhau2==""){
+		document.getElementById('loimk2').innerHTML="Vui lòng nhập mật khẩu !";loi3=1;
+	}else{
+		document.getElementById('loimk2').innerHTML="";loi3=0;
+	}
+	if(matkhau2!=matkhau){
+		document.getElementById('loimk2').innerHTML="Xác nhận mật khẩu không đúng !";loi4=1;
+	}else{
+		document.getElementById('loimk2').innerHTML="";loi4=0;
+	}
+	if(loi2==0&loi3==0&&loi4==0){
+		alert("Bạn đã tạo mới lại mật khẩu thành công !!! Mời bạn quay về trang đăng nhập để đăng nhập tài khoản với mật khẩu mới.") 
+		return true
+	}else return false;
+}
+    </script>
+</script>
+</body>
+</html>

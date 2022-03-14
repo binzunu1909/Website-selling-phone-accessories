@@ -1,0 +1,51 @@
+#tong{
+	width: 107.5%;
+	height: auto;
+	float: right;
+	position: relative;
+	left: 3.75%;
+}
+#bchinhsach ul{
+  list-style-type:none;
+  text-align:center;
+  background:white;
+  width: 23%;
+  height: 600px;
+  position: relative;
+  margin-top:3%;
+  z-index: 2;
+  border-right-style: solid; 
+}
+
+#bchinhsach li{
+  width:300px;
+  height:60px;
+  position:relative;
+  left: -10%;
+}
+
+#bchinhsach a{
+  text-decoration:none;
+  color:#c60000;
+  display:block;
+  font-size: 30px;
+  cursor: pointer;
+  border-bottom: 2px solid ;
+}
+
+#bchinhsach li a:hover{
+  color:#9400D3;
+}
+
+#banhang{
+	width: 72%;
+	height: auto;
+	position: absolute;
+	margin-top: -47.6%;
+	z-index: 2;
+	left: 27%;
+}
+#banhang li{
+	font-size: 24px;
+	list-style-type: none;
+}

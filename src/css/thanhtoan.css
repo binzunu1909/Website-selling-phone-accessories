@@ -1,0 +1,149 @@
+table{
+	border-collapse:collapse;
+	width: 100%;
+}
+#tieude{
+	text-align: center;
+	font-size: 25px;
+	background-color: #5cb85c;
+	color: #FFFFFF;
+}
+#hinh img{
+	width: 60%;
+}
+#sanpham1,#sanpham2,#sanpham3{
+	border-bottom: 2px solid #5cb85c;
+}
+#ten,#tongtien,#gia1,#thanhtien1,#gia2,#thanhtien2,#gia3,#thanhtien3{
+	font-size: 25px;
+	text-align: center;
+}
+#gia1,#gia2,#gia3{
+	margin-left: 12px;
+}
+#ten{
+	width: 95%;
+}
+#thanhtien1,#thanhtien2,#thanhtien3{
+	margin-left: 80px;
+}
+#thanhtoan a{
+	background-color:#006400;
+	font-size: 23px;
+	text-decoration: none;
+	color: #FFFFFF;
+	padding:8px 8px;
+	border-radius: 5px;
+}
+#thanhtoan a:hover{
+	background-color:yellow;
+	color: red;
+}
+#thanhtoan{
+	text-align: center;
+}
+#soluong1,#soluong2,#soluong3{
+	font-size: 25px;
+	margin-left: 40px;
+	text-align: center;
+	width: 50%;
+}
+#tiente{
+	margin-left: 5px;
+	font-size: 25px;
+}
+#tt{
+	font-size: 25px;
+	font-weight: bold;
+}
+#tongtien{
+	font-size: 25px;
+	font-weight: bold;
+	margin-left: 24px;
+}
+#trong{
+	display: none;
+	text-align: center;
+	color: #006400;
+}
+#trong h1{
+	font-size: 35px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+#trong a{
+	margin-top: 20px;
+	background: orange;
+    color: white;
+    text-decoration: none;
+    font-size: 35px;
+    border-radius: 8px;
+    padding: 10px 10px;
+}
+#menu{
+	background: #E1E1E1;
+	height: 50px;
+	clear: left;
+	margin-bottom: 15px;
+}
+#menu ul{
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+#menu ul li {
+	display: inline-table;
+	background: #E1E1E1;
+	line-height: 50px;
+	width: 13%;
+	height: 10%;
+	border-right: 1px solid gray;
+	font-weight: bolder;
+	float: left;
+}
+#menu ul li a{
+	color: #343434;
+	display: block;
+	text-decoration: none;
+	text-align: center;
+}
+#menu ul li :hover{
+	background: #99CD4E;
+	color: #FFFFFF;
+}
+.form{
+	font-size: 30px;
+}
+.thanhtoan{
+	font-size: 25px;
+	padding-right: 20px;
+}
+#dienthongtin{
+	margin-left: 330px;
+	padding-left: 15px ;
+	height: 290px;
+	width:680px;
+	border: 5px solid #006400;
+	position: relative;
+}
+#nutthanhtoan{
+	font-size: 25px;
+	position: absolute;
+	top: 248px;
+	left: 280px;
+	color: #FFFFFF;
+	background-color: #006400;
+}
+.loi{
+	color: #990000;
+	font-size: 18px;
+}
+.lichsu{
+	text-align: left;
+	font-size: 30px;
+	margin-right: 20px;
+}
+.lichsu a{
+	text-decoration: none;
+	color: #990000;
+}

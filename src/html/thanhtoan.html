@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ThanhToan</title>
+	<link rel="stylesheet" type="text/css" href="../css/thanhtoan.css">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <script type="text/javascript" src="../js/thanhtoan.js"></script>
+</head>
+<body>
+  <div class="lichsu"><a href="../pk.html" target="_blank" >Trang chủ</a> 
+<div class="container"> 
+ <table id="thongtin" class="table table-hover table-condensed"> 
+   <tr id="tieude"> 
+   	<th style="width:10%">Hình</th>
+    <th style="width:50%" >Tên sản phẩm</th> 
+    <th style="width:10%">Giá</th> 
+    <th style="width:10%">Số lượng</th> 
+    <th style="width:20%" class="text-center">Thành tiền</th> 
+   </tr> 
+  
+  	<tr id="sanpham1"> 
+  	<td>
+     <div  id="hinh"><img src="../img/loaBT.gif"></div>
+  	</td>
+   <td> 
+     <div id="ten"><p>Loa Bluetooth iCutes MB-M818 Cún</p></div> 
+     </div> 
+   </td> 
+   <td><span id="gia1">270.000</span><span id="tiente">đ</span></td> 
+   <td>
+    <div id="chinhsl">
+      <p id="soluong1">1</p>
+    </div>
+   </td> 
+   <td ><span id="thanhtien1">270.000</span><span id="tiente">đ</span></td> 
+  </tr>  
+  
+  <tr id="sanpham2" > 
+  	<td>
+     <div  id="hinh"><img src="../img/pinduphong6.gif"></div>
+  	</td>
+   <td> 
+     <div id="ten"><p>Pin sạc dự phòng 7.500 mAh AVA Cat 3S Cam Trắng</p></div> 
+     </div> 
+   </td> 
+   <td><span id="gia2">240.000</span><span id="tiente">đ</span></td> 
+   <td>
+     <div id="chinhsl">
+      <p id="soluong2">2</p>
+    </div>
+   </td> 
+   <td><span id="thanhtien2">480.000</span><span id="tiente">đ</span></td> 
+  </tr>  
+
+   <tr id="sanpham3"> 
+  	<td>
+     <div  id="hinh"><img src="../img/taingheAQ.gif"></div>
+  	</td>
+   <td> 
+     <div id="ten"><p>Tai nghe EP Awei Q19Hi</p></div> 
+     </div> 
+   </td> 
+   <td><span id="gia3">130.000</span><span id="tiente">đ</span></td> 
+   <td>
+     <div id="chinhsl">    
+      <p id="soluong3">1</p>
+    </div>
+   </td> 
+   <td><span id="thanhtien3">130.000</span><span id="tiente">đ</span></td> 
+  </tr> 
+   <tr id="cuoi"> 
+    <td colspan="4"></td> 
+    <td ><span id="tt">Tổng</span><span id="tongtien">880.000</span><span id="tiente" style="font-weight: bold; font-size: 25px;">đ</span></td> 
+   </tr> 
+ </table>
+ <div id ="dienthongtin">
+   <form method="get">
+    <span class="form">Tên người nhận</span>
+     <input type="text" name="tennguoinhan" style="margin-left: 5px;font-size: 20px;" size="30" id="tennguoinhan">
+     <span id="loi1" class="loi"></span>
+     </br>
+
+     <span class="form">Địa chỉ</span>
+     <input type="text" name="diachi" style="margin-left: 107px;font-size: 20px;" size="30" id="diachi">
+     <span id="loi2" class="loi"></span>
+     </br>
+
+     <span class="form">Số điện thoại</span>
+     <input type="text" name="sdt" style="margin-left: 35px;font-size: 20px;" size="30" id="sdt">
+      <span id="loi3" class="loi"></span>
+     </br></br>
+
+     <span class="form">Phương thức thanh toán</span></br>
+
+     <input type="radio" id="tienmat" name="thanhtoan" checked style="height: 15px;width: 15px; margin-left: 30px" onclick="hienthe()"/><span class="thanhtoan">Tiền mặt</span>
+     <input type="radio" id="the" name="thanhtoan"style="height: 15px;width: 15px;" onclick="hienthe()"/><span class="thanhtoan">Thẻ tín dụng</span></br>
+
+     <span style="font-size: 27px;">Số thẻ</span>
+     <input type="text" name="sothe" disabled style="margin-left: 30px;font-size: 20px;" size="25" id="sothe">
+     <span id="loi4" class="loi"></span>
+
+     <button type="submit" id="nutthanhtoan" onclick="return kiemtratt();" formaction="lichsumuahang.html">Thanh toán</button>
+   </form>
+ </div>
+</div>
+</body>
+</html>

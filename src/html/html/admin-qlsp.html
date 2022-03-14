@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quản lý sản phẩm</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<link rel="stylesheet" type="text/css" href="../css/admin-qlsp.css">
+  <link rel="stylesheet" type="text/css" href="../css/suatt.css">
+	<script type="text/javascript" src="../js/admin.js"></script>
+</head>
+<body id="body" style="height: 970px;">
+	<div id="logo">
+				
+		</div>		
+		<div id="dau">
+			<ul>
+				<li><a href="dangnhap.html"><img src="../../img/icon/icon-taikhoan-ad.gif">Đăng Xuất</a></li>
+				<li><p>Xin Chào</p></li>				
+			</ul>		
+		</div>
+		<div id="menu">
+			<ul>						
+				<li> 
+					<a href="admin-qlsp.html" style="color: #FFFFFF;background-color: #5cb85c;">
+						<img src="../../img/icon/icon-sp-ac.gif">SẢN PHẨM
+					</a>
+					
+				</li>
+				<li>
+					<a href="admin-qltk.html"><img src="../../img/icon/icon-tk.gif">TÀI KHOẢN</a>
+					
+				</li>
+				<li>
+					<a href="admin-qldh.html"><img src="../../img/icon/icon-dh.gif">ĐƠN HÀNG</a>
+					
+				</li>
+				<li>
+					<a href="admin-qlthk.html"><img src="../../img/icon/icon-thk.gif">THỐNG KÊ</a>
+					
+				</li>
+			</ul>
+		</div>
+	<div id="noidung" style="height: 790px">
+		<form method="post" id="tksp">
+			<input style="text" id="timkiem" placeholder="Tên sản phẩm cần tìm" size="45">
+			<button type="submit" class="icon"><img src="../../img/icon/icon-kinhlup.gif"></button><br>
+		</form>
+		<form id="boloc" method="post">
+			<select name="sxgia">
+			    <option value="">Săp xếp theo giá</option>
+			    <option value="giatang">Giá tăng dần</option>
+			    <option value="giagiam">Giá giảm dần</option>
+		  	</select>
+		  	<select name="chongia">
+			    <option value="">Chọn mức giá</option>
+			    <option value="duoi1">Dưới 1 trăm</option>
+			    <option value="1dem3">Từ 1 - 3 trăm</option>
+			    <option value="3dem5">Từ 3 - 5 trăm</option>
+			    <option value="3dem5">Trên 5 trăm</option>
+		  	</select>
+		  	<select name="chongia">
+			    <option value="">Chọn loại sản phẩm</option>
+			    <option value="duoi1">Bảo vệ </option>
+			    <option value="1dem3">Tai nghe</option>
+			    <option value="3dem5">Cáp sạc</option>
+			    <option value="3dem5">Phụ kiện khác</option>
+		  	</select>
+		  	<button type="submit" formaction="admin-qlsp1.html"><img src="../../img/icon/icon-boloc.gif"></button>
+		  	<p id="them" onclick="themsp()">Thêm sản phẩm mới</p>
+		</form>
+		<table id="thongtin"> 
+	   	<tr id="tieude"> 
+		   	<th style="width:10%">Hình</th>
+		    <th style="width:40%" >Tên sản phẩm</th>
+		    <th style="width:15%">Loại</th> 
+		    <th style="width:15%">Giá</th> 
+		    <th style="width:10%">Sửa</th> 
+		    <th style="width:10%">Xóa</th> 
+	   </tr> 
+
+	 </table>
+  </form>
+  </div>
+	</div>
+  <div id="mo" class="mo">
+    <div id="suasp" class="suasp">
+      <form method="post">
+        <div id="muc">
+          <h2>Thông Tin</h2>
+          <ul>
+            <li>Ảnh sản phẩm</li>
+            <li>Tên sản phẩm</li>
+            <li>Loại sản phẩm</li>
+            <li>Giá sản phẩm</li>
+          </ul>
+        </div>
+        <div id="khung">  
+         <span id="thoat" onclick="thoat()">X</span> 
+          <ul>
+            <form>
+            <li><input type="file" name="" id="" size="30" value="" placeholder="" style="border: none;"></li>
+            <li><input type="text" name="tensp" id ="tensp" size="30" value="" placeholder="Loa Bluetooth iCutes MB-M818 Cún"></li>
+            <li><select name="sxgia" id="loaisp">
+                <option value="pkk" >Phụ kiện khác</option>
+                  <option value="bv">Bảo vệ </option>
+                  <option value="tn">Tai nghe</option>
+                  <option value="cs">Cáp sạc</option>
+                </select>
+            </li>
+            <li><input type="text" name="giasp" id="giasp" size="30" value="" placeholder="270.000đ"></li>
+            <button type="submit" onclick="return tbsuasp();">Thay Đổi</button>
+            </form>
+          </ul>
+        </div>
+      </div>
+  </div>
+
+      <div id="mo1" class="mo">
+    <div id="suasp1" class="suasp">
+      <form method="post">
+        <div id="muc">
+          <h2>Thông tin</h2>
+          <ul>
+            <li>Ảnh sản phẩm</li>
+            <li>Tên sản phẩm</li>
+            <li>Loại sản phẩm</li>
+            <li>Giá sản phẩm</li>
+          </ul>
+        </div>
+        <div id="khung">  
+         <span id="thoat" onclick="thoat1()">X</span> 
+          <ul>
+            <form>
+            <li><input type="file" name="" id="" size="30" value="" style="border: none;"></li>
+            <li><input type="text" name="tensp" id ="tensp" size="30" value="" placeholder=""></li>
+            <li><select name="sxgia" id="loaisp">
+                <option value="pkk" >Phụ kiện khác</option>
+                  <option value="bv">Bảo vệ </option>
+                  <option value="tn">Tai nghe</option>
+                  <option value="cs">Cáp sạc</option>
+                </select>
+            </li>
+            <li><input type="text" name="giasp" id="giasp" size="30" value="" placeholder=""></li>
+            <button type="submit" onclick="return tbthemsp();">Thêm sản phẩm</button>
+            </form>
+          </ul>
+        </div>
+      </div>
+</body>
+</html>

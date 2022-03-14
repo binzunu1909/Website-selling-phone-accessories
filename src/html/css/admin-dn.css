@@ -1,0 +1,52 @@
+ body{
+ 	background-color: #333333;
+ }
+#dangnhap{
+	height: 80%;
+	width: 70%; 
+	text-align: center;
+	margin: 30px 80px;
+	background: #99CD4E;
+	padding: 10px;
+	margin: 80px 160px;
+	line-height: 80px;
+	box-shadow: 10px 10px #228B22,20px 20px #008000,30px 30px #006400;
+}
+#dangnhap h2{
+	font-size: 50px;
+	color: #FFFFFF;
+}
+#dangnhap form ul{
+	line-height: 80px;
+	list-style-type: none;
+}
+#dangnhap ul li img{	
+	height: 5%;
+	width: 5%;
+}
+#dangnhap form ul li input{
+	font-size: 30px;
+	padding: 5px 10px;
+	background: #FFFFFF;
+	border: 2px solid #006666;
+	border-radius: 10px;
+}
+#dangnhap form ul button{
+	font-size: 30px;
+	color: #FFFFFF;
+	background-color: #006400;
+}
+#dangnhap form ul button:hover{
+	transition: 0.6s;
+	background-color:#FFFFFF;
+	color: #006400;
+}
+#dangnhap a{
+	font-size: 23px;
+	color: #343434;
+	padding: 10px;
+}
+.loitaikhoan{
+	color: red;
+	font-size: 20px;
+}

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quản lý thống kê</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<link rel="stylesheet" type="text/css" href="../css/admin-qlsp.css">
+	<link rel="stylesheet" type="text/css" href="../css/admin-qltk.css">
+	<script type="text/javascript" src="../js/admin.js"></script>
+</head>
+<body id="body" style="height: 1000px;">
+	<div id="logo">
+				
+		</div>		
+		<div id="dau">
+			<ul>
+				<li><a href="dangnhap.html"><img src="../../img/icon/icon-taikhoan-ad.gif">Đăng Xuất</a></li>
+				<li><p>Xin Chào</p></li>				
+			</ul>		
+		</div>
+		<div id="menu">
+			<ul>						
+				<li> 
+					<a href="admin-qlsp.html" >
+						<img src="../../img/icon/icon-sp.gif">SẢN PHẨM
+					</a>	
+				</li>
+				<li>
+					<a href="admin-qltk.html">
+            		<img src="../../img/icon/icon-tk.gif">TÀI KHOẢN</a>
+				</li>
+				<li>
+					<a href="admin-qldh.html"><img src="../../img/icon/icon-dh.gif">ĐƠN HÀNG</a>
+				</li>
+				<li>
+					<a href="admin-qlthk.html" style="color: #FFFFFF;background-color: #5cb85c;"><img src="../../img/icon/icon-thk-ac.gif">THỐNG KÊ</a>
+				</li>
+			</ul>
+		</div>
+		
+	<div id="noidung" style="height: 830px;">
+
+    <form id="boloc" method="post">
+      <select name="chonten">
+          <option value="">Thống kê năm nay</option>
+          <option value="1">Tháng 1</option>
+          <option value="2">Tháng 2</option>
+          <option value="3">Tháng 3</option>
+          <option value="4">Tháng 4</option>
+          <option value="5">Tháng 5</option>
+          <option value="6">Tháng 6</option>
+          <option value="7">Tháng 7</option>
+          <option value="8">Tháng 8</option>
+          <option value="9">Tháng 9</option>
+          <option value="10">Tháng 10</option>
+          <option value="11">Tháng 11</option>
+          <option value="12">Tháng 12</option>
+        </select>
+        <select name="chontg">
+          <option value="">Thống kê năm trước</option>
+          <option value="1">Tháng 1</option>
+          <option value="2">Tháng 2</option>
+          <option value="3">Tháng 3</option>
+          <option value="4">Tháng 4</option>
+          <option value="5">Tháng 5</option>
+          <option value="6">Tháng 6</option>
+          <option value="7">Tháng 7</option>
+          <option value="8">Tháng 8</option>
+          <option value="9">Tháng 9</option>
+          <option value="10">Tháng 10</option>
+          <option value="11">Tháng 11</option>
+          <option value="12">Tháng 12</option>
+        </select>
+        <button type="submit" formaction="admin-qlthk1.html"><img src="../../img/icon/icon-boloc.gif"></button>
+    </form>
+
+    <div class="top5" style="width: 1250px;display: inline-block;text-align: center;font-size: 35px;color: red;background-color: yellow; font-weight: bolder; padding: 5px;margin-top: 20px">* Xếp hạng 5 tài khoản mua hàng nhiều nhất trong tháng 11*</div>
+		<table>
+    
+      <tr id="tieude"> 
+        <th style="width:5px">TT</th>
+        <th style="width:50%">Tên tài khoản</th>
+        <th style="width:45%">Tổng tiền mua hàng</th>
+     </tr> 
+
+     <tr id="tk1">
+       <td id="tt">1</td>
+       <td id="ten">myhang1999</td>
+       <td id="soluong">18.052.000 đ</td>
+     </tr>
+
+     <tr id="tk2">
+       <td id="tt">2</td>
+       <td id="ten">lynhathao</td>
+       <td id="soluong">15.952.000 đ</td>
+     </tr>
+
+     <tr id="tk3">
+       <td id="tt">3</td>
+       <td id="ten">luutrienvinh</td>
+       <td id="gia">13.452.000 đ</td>
+     </tr>
+
+     <tr id="tk4">
+       <td id="tt">4</td>
+       <td id="ten">mimi2828</td>
+       <td id="gia">12.852.000 đ</td>
+     </tr>
+
+     <tr id="tk5">
+       <td id="tt">5</td>
+       <td id="ten">myden51034</td>
+       <td id="gia">12.851.000 đ</td>
+     </tr>
+
+	 </table>
+ 
+    <div class="top5" style="text-align: center;font-size: 35px;color: red;background-color: yellow; font-weight: bolder; padding: 5px; margin-top: 20px">* Xếp hạng 5 sản phẩm bán chạy nhất trong tháng 11 *</div>
+    <table>
+    
+      <tr id="tieude"> 
+        <th style="width:5px">TT</th>
+        <th style="width:50%">Tên sản phẩm</th>
+        <th style="width:45%">Số lượng bán</th>
+     </tr> 
+
+     <tr id="sanpham1">
+       <td id="tt">1</td>
+       <td id="ten">Loa Bluetooth iCutes MB-M818 Cún</td>
+       <td id="soluong">2.282 cái</td>
+     </tr>
+
+     <tr id="sanpham2">
+       <td id="tt">2</td>
+       <td id="ten">Pin sạc dự phòng 7.500 mAh AVA Cat 3S Cam Trắng</td>
+       <td id="soluong">1.882 cái</td>
+     </tr>
+
+     <tr id="sanpham3">
+       <td id="tt">3</td>
+       <td id="ten">Tai nghe EP Awei Q19Hi</td>
+       <td id="soluong">1.282 cái</td>
+     </tr>
+
+     <tr id="sanpham4">
+       <td id="tt">4</td>
+       <td id="ten">Loa Bluetooth iCutes MB-M916 Cú Đen</td>
+       <td id="soluong">1.199 cái</td>
+     </tr>
+
+     <tr id="sanpham5">
+       <td id="tt">5</td>
+       <td id="ten">Thẻ nhớ MicroSD 64 GB Lexar class 10 UHS-I</td>
+       <td id="soluong">1.022 cái</td>
+     </tr>
+
+   </table>
+
+	</div>
+
+</body>
+</html>

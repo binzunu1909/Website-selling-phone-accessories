@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quản lý đơn hàng</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<link rel="stylesheet" type="text/css" href="../css/admin-qlsp.css">
+	<link rel="stylesheet" type="text/css" href="../css/admin-qltk.css">
+	<script type="text/javascript" src="../js/admin.js"></script>
+</head>
+<body id="body" style="height: 1000px;">
+	<div id="logo">
+				
+		</div>		
+		<div id="dau">
+			<ul>
+				<li><a href="dangnhap.html"><img src="../../img/icon/icon-taikhoan-ad.gif">Đăng Xuất</a></li>
+				<li><p>Xin Chào</p></li>				
+			</ul>		
+		</div>
+		<div id="menu">
+			<ul>						
+				<li> 
+					<a href="admin-qlsp.html" >
+						<img src="../../img/icon/icon-sp.gif">SẢN PHẨM
+					</a>	
+				</li>
+				<li>
+					<a href="admin-qltk.html">
+            		<img src="../../img/icon/icon-tk.gif">TÀI KHOẢN</a>
+				</li>
+				<li>
+					<a href="admin-qldh.html"  style="color: #FFFFFF;background-color: #5cb85c;"><img src="../../img/icon/icon-dh-ac.gif">ĐƠN HÀNG</a>
+				</li>
+				<li>
+					<a href="admin-qlthk.html"><img src="../../img/icon/icon-thk.gif">THỐNG KÊ</a>
+				</li>
+			</ul>
+		</div>
+		
+	<div id="noidung" style="height: 900px;">
+		<form method="post" id="tksp">
+			<input style="text" id="timkiem" placeholder="Mã đơn hàng bạn muốn tìm kiếm" size="45">
+			<button type="submit" class="icon"><img src="../../img/icon/icon-kinhlup.gif"></button><br>
+		</form>
+		<form id="boloc" method="post">
+			<select name="chongia" style="margin-bottom: 25px;">
+			    <option value="">Mã đơn hàng</option>
+			    <option value="matang">Mã tăng dần</option>
+			    <option value="magiam">Mã giảm dần</option>
+		  	</select>
+			<select name="sxtongtien">
+			    <option value="">Săp xếp theo tổng tiền</option>
+			    <option value="tientang">Tiền tăng dần</option>
+			    <option value="tiengiam">Tiền giảm dần</option>
+		  	</select>
+		  	<select name="chontinhtrang">
+			    <option value="">Tình trạng hóa đơn</option>
+			    <option value="chuaduyet">Đang duyệt</option>
+			    <option value="danggiao">Đang giao</option>
+			    <option value="dagiao">Đã giao</option>
+		  	</select>
+		  	<button type="button" formaction="admin-qldh1.html"><img src="../../img/icon/icon-boloc.gif"></button>
+		</form>
+		<table id="thongtin"> 
+	   	<tr id="tieude"> 
+		   	<th style="width:5%">Mã</th>
+		    <th style="width:15%">Người nhận</th>
+		    <th style="width:24%">Địa chỉ</th> 
+		    <th style="width:10%">SĐT</th>
+		    <th style="width:15%">Tài khoản</th>  
+		    <th style="width:11%">Ngày mua</th> 
+        	<th style="width:10%">Tổng tiền</th>
+        	<th style="width:10%">Tình Trạng</th>
+	   </tr> 
+  	
+    <tr id="dh1">
+      <td id="madh">HD001</td>
+      <td id="tennguoinhan">Nhật Hào</td>
+      <td id="diachi">20/1 Dương Đình Nghệ P8 Q11</td>
+      <td id="sdt">0783731497</td>
+      <td id="sanphammua">lynhathao</td>
+      <td id="soluong">01/12/2019</td>
+      <td id="tongtien">270.000đ</td>
+      <td id="tt">Đang giao</td>
+    </tr>	
+  		
+  	<tr id="dh2">
+      <td id="madh">HD002</td>
+      <td id="tennguoinhan">Triển Vinh</td>
+      <td id="diachi">33/5 Trần Phú P8 Q5</td>
+      <td id="sdt">0784253841</td>
+      <td id="sanphammua">lutrienvinh</td>
+      <td id="soluong">15/06/2019</td>
+      <td id="tongtien">570.000đ</td>
+      <td id="tt">Đã giao</td>
+    </tr>
+
+     <tr id="dh3">
+      <td id="madh">HD003</td>
+      <td id="tennguoinhan">Nhật Hào</td>
+      <td id="diachi">20/1 Dương Đình Nghệ P8 Q11</td>
+      <td id="sdt">0783731497</td>
+      <td id="sanphammua">lynhathao</td>
+      <td id="soluong">03/12/2019</td>
+      <td id="tongtien">130.000đ</td>
+      <td id="tt">Chưa duyệt</td>
+    </tr>
+
+     <tr id="dh4">
+      <td id="madh">HD004</td>
+      <td id="tennguoinhan">Mỹ Hằng</td>
+      <td id="diachi">772 Võ Văn Kiệt P3 Q6</td>
+      <td id="sdt">0782256069</td>
+      <td id="sanphammua">myhang1999</td>
+      <td id="soluong">03/12/2019</td>
+      <td id="tongtien">710.000đ</td>
+      <td id="tt">Chưa duyệt</td>
+    </tr>
+
+    <tr id="dh5">
+      <td id="madh">HD005</td>
+      <td id="tennguoinhan">Thái Bôn</td>
+      <td id="diachi">225 Nguyễn Tri Phương P9 Q5</td>
+      <td id="sdt">0782257059</td>
+      <td id="sanphammua">bonnguyen</td>
+      <td id="soluong">28/10/2019</td>
+      <td id="tongtien">270.000đ</td>
+      <td id="tt">Đã giao</td>
+    </tr>
+
+    <tr id="dh6">
+      <td id="madh">HD006</td>
+      <td id="tennguoinhan">Hoàng Chương</td>
+      <td id="diachi">110 Hàn Hải Nguyên P8 Q11</td>
+      <td id="sdt">0782256081</td>
+      <td id="sanphammua">myden5001</td>
+      <td id="soluong">22/11/2019</td>
+      <td id="tongtien">380.000đ</td>
+      <td id="tt">Đang giao</td>
+    </tr>
+
+    <tr id="dh7">
+      <td id="madh">HD007</td>
+      <td id="tennguoinhan">Mỹ Hằng</td>
+      <td id="diachi">772 Võ Văn Kiệt P3 Q6</td>
+      <td id="sdt">0782256069</td>
+      <td id="sanphammua">myhang1999</td>
+      <td id="soluong">01/12/2019</td>
+      <td id="tongtien">100.000đ</td>
+      <td id="tt">Chưa duyệt</td>
+    </tr>
+
+    <tr id="dh8">
+      <td id="madh">HD008</td>
+      <td id="tennguoinhan">Mỹ Hằng</td>
+      <td id="diachi">772 Võ Văn Kiệt P3 Q6</td>
+      <td id="sdt">0782256069</td>
+      <td id="sanphammua">myhang1999</td>
+      <td id="soluong">31/12/2019</td>
+      <td id="tongtien">230.000đ</td>
+      <td id="tt">Chưa duyệt</td>
+    </tr>
+
+    <tr id="dh8">
+      <td id="madh">HD009</td>
+      <td id="tennguoinhan">Ngọc Lan</td>
+      <td id="diachi">74 Lũy Bán Bích P8 Q.Tân Bình</td>
+      <td id="sdt">0762356840</td>
+      <td id="sanphammua">ngoclan11</td>
+      <td id="soluong">26/12/2019</td>
+      <td id="tongtien">715.000đ</td>
+      <td id="tt">Đã giao</td>
+    </tr>
+    
+	<tr id="dh8">
+      <td id="madh">HD010</td>
+      <td id="tennguoinhan">Ngọc Hân</td>
+      <td id="diachi">74/3 Lạc Long Quân P8 Q11</td>
+      <td id="sdt">078227546</td>
+      <td id="sanphammua">00hanngoc00</td>
+      <td id="soluong">29/12/2019</td>
+      <td id="tongtien">955.000đ</td>
+      <td id="tt">Đang giao</td>
+    </tr>
+
+    <tr id="dh8">
+      <td id="madh">HD011</td>
+      <td id="tennguoinhan">Ngọc Hân</td>
+      <td id="diachi">74/3 Lạc Long Quân P8 Q11</td>
+      <td id="sdt">078227546</td>
+      <td id="sanphammua">00hanngoc00</td>
+      <td id="soluong">02/12/2019</td>
+      <td id="tongtien">505.000đ</td>
+      <td id="tt">Chưa duyệt</td>
+    </tr>
+
+     <tr id="dh8">
+      <td id="madh">HD011</td>
+      <td id="tennguoinhan">Ngọc Hân</td>
+      <td id="diachi">74/3 Lạc Long Quân P8 Q11</td>
+      <td id="sdt">078227546</td>
+      <td id="sanphammua">00hanngoc00</td>
+      <td id="soluong">02/12/2019</td>
+      <td id="tongtien">505.000đ</td>
+      <td id="tt">Chưa duyệt</td>
+    </tr>
+
+     <tr id="dh8">
+      <td id="madh">HD011</td>
+      <td id="tennguoinhan">Ngọc Hân</td>
+      <td id="diachi">74/3 Lạc Long Quân P8 Q11</td>
+      <td id="sdt">078227546</td>
+      <td id="sanphammua">00hanngoc00</td>
+      <td id="soluong">02/12/2019</td>
+      <td id="tongtien">505.000đ</td>
+      <td id="tt">Chưa duyệt</td>
+    </tr>
+
+     <tr id="dh8">
+      <td id="madh">HD011</td>
+      <td id="tennguoinhan">Ngọc Hân</td>
+      <td id="diachi">74/3 Lạc Long Quân P8 Q11</td>
+      <td id="sdt">078227546</td>
+      <td id="sanphammua">00hanngoc00</td>
+      <td id="soluong">02/12/2019</td>
+      <td id="tongtien">505.000đ</td>
+      <td id="tt">Chưa duyệt</td>
+    </tr>
+
+  		<td colspan="6"></td>
+  		<td colspan="2">
+  			<a id="trang" style="margin-left: 35px;"><</a>
+  			<a id="trang" style="color: #006400;">1</a>
+  			<a href="admin-qldh2.html" id="trang" target="_blank">2</a>
+  			<a href="admin-qldh2.html" id="trang" target="_blank">></a>
+  		</td>
+  	</tr>
+
+	 </table>
+ 
+	</div>
+
+</body>
+</html>

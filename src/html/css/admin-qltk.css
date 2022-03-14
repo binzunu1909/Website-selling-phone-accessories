@@ -1,0 +1,140 @@
+#dangky{
+	float: left;
+    height: 560px;
+    width: 240px;
+    line-height: 25px;
+    background: #FFFFFF;
+    margin: 30px 0px;
+}
+#dangky h2{
+	text-align: center;
+	font-size: 30px;
+	color: #343434;
+}
+#dangky ul{
+	list-style-type: none;
+	text-align: right;
+	font-size: 25px;
+	line-height: 40px;
+}
+#nhaptt{
+	margin: 30px 0px;
+    float: left;
+    height: 500px;
+    line-height: 40px;
+    width: 590px;
+    background: #FFFFFF;
+    padding-top: 60px;
+}
+#nhaptt ul{
+	list-style-type: none;
+}
+#nhaptt ul li input{
+	font-size: 15px;
+	padding: 5px;
+	background: #FFFFFF;
+	border: 2px solid #5cb85c;
+	border-radius: 5px;
+}
+#thoattk{
+	display: block;
+    color: #FFFFFF;
+    font-size: 40px;
+    top: 30px;
+    position: absolute;
+    right: 536px;
+    background: #006400;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+#nhaptt ul li{
+	font-size: 21px;
+}
+#nhaptt ul button{
+	margin-top: 20px;
+    font-size: 20px;
+    color: #FFFFFF;
+    background: #006400;
+    padding: 8px 100px 8px 100px;
+}
+#loingaysinh{
+	margin-left: 30px;
+}
+.loi{
+	margin-left: 5px;
+	font-size: 20px;
+	color: red;
+}
+.suasp{
+    top: 0px;
+    left: 300px;
+    -webkit-animation-name:zoom;
+    -webkit-animation-duration:0.6s;
+    animation-name:zoom;
+    animation-duration:0.6s;
+    z-index: -1;
+}
+#muc{
+    display: block;
+    float: left;
+    height: 589px;
+    width: 30%;
+    background: #FFFFFF;
+    margin: 10px 0px;
+}
+#muc h2{
+    text-align: center;
+    font-size: 30px;
+    color: #343434;
+}
+#muc ul{
+    list-style-type: none;
+    text-align: right;
+    font-size: 25px;
+    line-height: 102px;
+}
+#khung{
+    display: block;
+    margin: 10px 0px;
+    float: left;
+    height: auto;
+    position: relative;
+    width: 50%;
+    background: #FFFFFF;
+    padding-top: 5.9%;  
+    padding-bottom: 15.9%;
+    padding-right: 140px;
+}
+#khung ul{
+    list-style-type: none;
+}
+.thongtintaikhoan{
+    font-size: 20px;
+    padding: 5px;
+    border: 2px solid #5cb85c;
+    border-radius: 5px;
+}
+#khung ul li{
+    margin-top: 67px;
+    font-size: 20px;
+}
+#khung ul button{
+    top: 480px;
+    left: 100px;
+    position: absolute;
+    font-size: 20px;
+    color: #FFFFFF;
+    background: #006400;
+    padding: 8px 50px 8px 50px;
+}
+#khung a{
+    text-decoration: none;
+    font-size: 35px;
+    margin-left: 85px;
+    color: #990000;
+}
+#loaisp{
+    border-radius: 5px;
+    padding: 5px 105px;
+    font-size: 20px;
+}

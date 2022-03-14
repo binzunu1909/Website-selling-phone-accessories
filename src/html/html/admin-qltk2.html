@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quản lý tài khoản</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<link rel="stylesheet" type="text/css" href="../css/admin-qlsp.css">
+	<link rel="stylesheet" type="text/css" href="../css/admin-qltk.css">
+	<script type="text/javascript" src="../js/admin.js"></script>
+</head>
+<body id="body">
+	<div id="logo">
+				
+		</div>		
+		<div id="dau">
+			<ul>
+				<li><a href="dangnhap.html"><img src="../../img/icon/icon-taikhoan-ad.gif">Đăng Xuất</a></li>
+				<li><p>Xin Chào</p></li>				
+			</ul>		
+		</div>
+		<div id="menu">
+			<ul>						
+				<li> 
+					<a href="admin-qlsp.html" >
+						<img src="../../img/icon/icon-sp.gif">SẢN PHẨM
+					</a>	
+				</li>
+				<li>
+					<a href="admin-qltk.html" style="color: #FFFFFF;background-color:#5cb85c;">
+            		<img src="../../img/icon/icon-tk-ac.gif">TÀI KHOẢN</a>
+				</li>
+				<li>
+					<a href="admin-qldh.html"><img src="../../img/icon/icon-dh.gif">ĐƠN HÀNG</a>
+				</li>
+				<li>
+					<a href="admin-qlthk.html"><img src="../../img/icon/icon-thk.gif">THỐNG KÊ</a>
+				</li>
+			</ul>
+		</div>
+		
+	<div id="noidung">
+		<form method="post" id="tksp">
+			<input style="text" id="timkiem" placeholder="Tên tài khoản bạn muốn tìm kiếm" size="45">
+			<button type="submit" class="icon"><img src="../../img/icon/icon-kinhlup.gif"></button><br>
+		</form>
+		<form id="boloc" method="post">
+			<select name="chonten">
+			    <option value="">Săp xếp theo tên</option>
+			    <option value="tentang">Tên tăng A-Z</option>
+			    <option value="tengiam">Tên giảm Z-A</option>
+		  	</select>
+		  	<select name="chontg">
+			    <option value="">Thời gian offline</option>
+			    <option value="dangon">Đang online</option>
+			    <option value="duoi1ngay">Offline dưới 1 ngày</option>
+			    <option value="duoi1tuan">Offline dưới 1 tuần</option>
+			    <option value="tren1thang">Trên 1 tháng</option>
+		  	</select>
+		  	<select name="chontt">
+			    <option value="">Tình trạng tài khoản</option>
+			    <option value="khoa">Tài khoản bị khóa </option>
+			    <option value="mo">Tài khoản không bị khóa </option>
+		  	</select>
+		  	<button type="submit" formaction="admin-qltk1.html"><img src="../../img/icon/icon-boloc.gif"></button>
+		  	<p id="them" onclick="themsp()">Thêm tài khoản mới</p>
+		</form>
+		<table id="thongtin"> 
+	   	<tr id="tieude"> 
+		   	<th style="width:20%">Tên tài khoản</th>
+		    <th style="width:15%" >Mật khẩu</th>
+		    <th style="width:20%">Thư điện tử</th> 
+		    <th style="width:15%">Số điện thoại</th> 
+        	<th style="width:20%">Trạng thái</th>
+        	<th style="width:5%">Sửa</th>
+		    <th style="width:5%">Khóa</th> 
+	   </tr> 
+  	
+    <tr id="tk1">
+      <td id="tk">lynhathao</td>
+      <td id="mk">#########</td>
+      <td id="email">lynhathao10@gmail.com</td>
+      <td id="sdt">0783731497</td>
+      <td id="tt">Hoạt động 4 giờ trước</td>
+      <td>
+      		<button type="button" id="sua" onclick="suasp()" style="margin-left: 10px;"><img src="../../img/icon/icon-but.gif"></button>
+  	  </td>
+      <td id="khoa"><input type="checkbox" id="khoa1" name="" style="height: 30px; width: 30px" onclick="khoatk1()"></td>
+    </tr>	
+  		
+    <tr id="tk2">
+      <td id="tk">lutrienvinh</td>
+      <td id="mk">##############</td>
+      <td id="email">lutrienvinh0908@gmail.com</td>
+      <td id="sdt">0353631949</td>
+      <td id="tt">Hoạt động 5 giờ trước</td>
+      <td>
+      		<button type="button" id="sua" onclick="suasp()" style="margin-left: 10px;"><img src="../../img/icon/icon-but.gif"></button>
+  	  </td>
+      <td id="khoa"><input type="checkbox"id="khoa2" name="" style="height: 30px; width: 30px" onclick="khoatk2()"></td>
+    </tr>
+
+    <tr id="tk3">
+      <td id="tk">myhang1999</td>
+      <td id="mk">#############</td>
+      <td id="email">myhang1999@gmail.com</td>
+      <td id="sdt">0128344680</td>
+      <td id="tt">Đang hoạt động</td>
+      <td>
+      		<button type="button" id="sua" onclick="suasp()" style="margin-left: 10px;"><img src="../../img/icon/icon-but.gif"></button>
+  	  </td>
+      <td id="khoa"><input type="checkbox"id="khoa3" name="" style="height: 30px; width: 30px" onclick="khoatk3()"></td>
+    </tr>
+
+  	<tr>
+  		<td colspan="4"></td>
+  		<td colspan="2">
+  			<a href="admin-qltk1.html" id="trang" target="_blank" style="margin-left: 35px;"><</a>
+  			<a href="admin-qltk1.html" id="trang" target="_blank" >1</a>
+  			<a id="trang" style="color: #006400;">2</a>
+  			<a id="trang" >></a>
+  		</td>
+  	</tr>
+
+	 </table>
+ 
+	</div>
+	<div id="mo1" class="mo">
+		<div id="suasp1" class="themtk">
+			<form method="post">
+				<div id="dangky">
+					<h2>Thông tin</h2>
+					<ul>
+						<li>Tài Khoản</li>
+						<li>Mật Khẩu</li>
+						<li>Nhập Lại</li>
+						<li>Họ &amp; Tên</li>
+						<li>Giới Tính</li>
+						<li>Ngày Sinh</li>
+						<li>Email</li>
+						<li>Địa Chỉ</li>
+						<li>Điện Thoại</li>
+					</ul>
+				</div>
+				<div id="nhaptt">	
+					<span id="thoattk" onclick="thoat1()">X</span> 		
+					<ul>
+						<li><input type="text" name="taikhoan" id="taikhoan" size="30" value=""><span id="loitk" class="loi"></span></li>
+						<li><input type="password" name="matkhau" id ="matkhau" size="30" value=""><span id="loimk" class="loi"></span></li>
+						<li><input type="password" name="matkhau2" id="matkhau2" size="30" value=""><span id="loimk2" class="loi"></span></li>
+						<li><input type="text" name="hoten" id="hoten" size="30" value=""><span id="loihoten" class="loi"></span></li>
+						<li>
+							<input type="radio" name="gioitinh" value="nam" checked> Nam
+	    					<input type="radio" name="gioitinh" value="nu" >Nữ
+	    				</li>
+	    				<li>
+	    					<input type="number" name="ngay" min="1" max="31" placeholder="Ngày" value="" id="ngay">
+	    					<input type="number" name="thang" min="1" max="12" placeholder="Tháng" value="" id="thang">
+	    					<input type="number" name="thang" min="1950" max="2015" placeholder="Năm" value="" id="nam">
+	    					<span id="loingaysinh" class="loi"></span>
+	    				</li>
+						<li><input type="text" name="email" id="email" size="30" value=""><span id="loiemail" class="loi"></span></li>
+						<li><input type="text" name="diachi" id="diachi" size="30" value=""><span id="loidiachi" class="loi"></span ></li>
+						<li>
+							<input type="text" name="dienthoai" id="dienthoai" size="30" value="">
+							<span id="loidienthoai" class="loi"></span>
+						</li>
+						<button type="submit" onclick="KiemTraDK();return false;">Đăng Ký</button>
+					</ul>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<div id="mo" class="mo">
+    <div id="suasp" class="suasp">
+      <form method="post">
+        <div id="muc">
+          <h2>Thông Tin</h2>
+          <ul>
+            <li>Tài khoản</li>
+            <li>Mật khẩu</li>
+            <li>Thư điện tử</li>
+            <li>Số điện thoại</li>
+          </ul>
+        </div>
+        <div id="khung">  
+         <span id="thoat" onclick="thoat()" style="left:459px;">X</span> 
+          <ul>
+            <form>
+            <li><input type="text" name="" id="" class="thongtintaikhoan" size="30" value="" placeholder="lynhathao"></li>
+            <li><input type="password" name="tensp" id ="tensp" size="30" class="thongtintaikhoan" value="" placeholder="#########"></li>
+            <li><select name="sxgia" id="loaisp">
+                <option value="pkk" >Phụ kiện khác</option>
+                  <option value="bv">Bảo vệ </option>
+                  <option value="tn">Tai nghe</option>
+                  <option value="cs">Cáp sạc</option>
+                </select>
+            </li>
+            <li><input type="text" name="dienthoai" id="dienthoai" class="thongtintaikhoan" size="30" value="" placeholder="0783731497"></li>
+            <button type="submit" onclick="return tbsuasp();">Thay Đổi</button>
+            </form>
+          </ul>
+        </div>
+      </div>
+     </div> 
+
+</body>
+</html>

@@ -1,0 +1,130 @@
+table{
+	border-collapse:collapse;
+	width: 100%;
+}
+th,td{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+#tieude{
+	text-align: center;
+	font-size: 25px;
+	background-color: #5cb85c;
+	color: #FFFFFF;
+}
+#hinh img{
+	width: 100%;
+}
+#sanpham1,#sanpham2,#sanpham3{
+	border-bottom: 2px solid #5cb85c;
+}
+#sanpham1:hover,#sanpham2:hover,#sanpham3:hover{
+	background-color: #E1E1E1E1;
+	font-weight: bold;
+}
+#ten,#tongtien,#gia1,#thanhtien1,#gia2,#thanhtien2,#gia3,#thanhtien3{
+	font-size: 25px;
+	text-align: center;
+}
+#ten{
+	width: 95%;
+}
+#thanhtien1,#thanhtien2,#thanhtien3{
+	margin-left: 100px;
+}
+#thanhtoan a{
+	background-color:#006400;
+	font-size: 23px;
+	text-decoration: none;
+	color: #FFFFFF;
+	padding:8px 8px;
+	border-radius: 5px;
+}
+#thanhtoan a:hover{
+	background-color:yellow;
+	color: red;
+}
+#thanhtoan{
+	text-align: center;
+}
+#soluong1,#soluong2,#soluong3{
+	font-size: 25px;
+	margin-left: 20px;
+	text-align: center;
+	width: 50%;
+}
+#tiente{
+	margin-left: 5px;
+	font-size: 25px;
+}
+#chinhsl{
+	position: relative;
+}
+#tru1,#cong1{
+	position: absolute;
+	font-size: 18px;
+	top:5%;
+}
+#tru2,#cong2{
+	position: absolute;
+	font-size: 18px;
+	top:0%;
+}
+#tru3,#cong3{
+	position: absolute;
+	font-size: 18px;
+	top:0%;
+}
+#tru1,#tru2,#tru3{
+	left: 10%;
+}
+#cong1,#cong2,#cong3{
+	right: 20%;
+}
+#tt{
+	font-size: 25px;
+	font-weight: bold;
+}
+#tongtien{
+	font-size: 25px;
+	font-weight: bold;
+	margin-left: 40px;
+}
+#xoa{
+	background: #990000;
+	color: #FFFFFF;
+	border-radius: 3px;
+	font-size: 20px;
+}
+#xoa img{
+	padding-top: 5px;
+	height: 25px;
+}
+#trong{
+	display: none;
+	text-align: center;
+	color: #006400;
+}
+#trong h1{
+	font-size: 35px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+#trong a{
+	margin-top: 20px;
+	background: orange;
+    color: white;
+    text-decoration: none;
+    font-size: 35px;
+    border-radius: 8px;
+    padding: 10px 10px;
+}
+.lichsu{
+	text-align: right;
+	font-size: 30px;
+	margin-right: 20px;
+}
+.lichsu a{
+	text-decoration: none;
+	color: #990000;
+}

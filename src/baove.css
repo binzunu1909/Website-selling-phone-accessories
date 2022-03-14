@@ -1,0 +1,298 @@
+#phu{
+	width: 107.5%;
+	height: 40px;
+	float: right;
+	margin-right: -3.75%;
+	background: #BBBBBB;
+	position: relative;
+	top:-25px;
+}
+
+#phu ul{
+	width: 97%;
+ 	height:50px; 
+   	list-style-type: none;
+   	margin: 0;
+   	overflow: hidden;
+   	font-size:15px;
+   	position: relative;
+   	float: right;
+   	top:1%;
+   	z-index: 1;
+}
+
+#phu li {
+  	float: left;
+  	padding: 2px 1px;
+  	position: relative;
+  	left: -2.5%;
+}
+
+#phu li a {
+  	display: inline-block;
+  	color: blue;
+  	text-align: center;
+  	padding: 9px 16px;
+  	text-decoration: none;
+  	background: #bbbbbb;
+}
+
+#phu li a:hover{
+  	color: red;
+}
+
+#chung{
+	position: relative;
+	width: 107.5%;
+	height: auto;
+	top:0;
+	float: right;
+	right: -3.75%;
+}
+#muc3{
+	clear: right;
+	float: left;
+	width: 200px;
+	height: 850px;
+}
+#muc3 ul{
+	list-style: none;
+	width: 165px;
+	float: left;
+	height: 900px;
+	position: relative;
+	left: -3.75%;
+	z-index: 1;
+	border-right: solid;
+}
+
+.tensp1 a{
+	color:black;
+}
+
+.tensp1 a:hover{
+	font-size: 18px;
+	color: red;
+}
+.hinh1:hover{
+	opacity: 0.5;
+  	filter: alpha(opacity=50);
+}
+#muc4{
+	float: left;
+	position: relative;
+	width: 1050px;
+	height: 930px;
+	top:13px;
+	right: -1%;
+}
+
+details {
+    display: block;
+    position: relative;
+    left: 86%;
+    z-index: 2;
+    width: 120px;
+}
+summary {
+	text-align: center;
+    display: block;
+    font-size: 17px; 
+    background: #770000;
+    border-style: solid #770000;
+    line-height: 30px;
+    cursor: pointer;
+    color: white;
+}
+
+details ul{
+	list-style: none;
+	width: 83px;
+	height: 80px;
+	left:0%;
+	position:relative;
+	top: -15px;
+}
+
+details li{
+	text-align: center;
+	line-height: 30px;
+	font-size: 15px; 
+	width: 118.5px;
+	position: relative;
+	left: -48%;
+	border-style:solid;
+	border-width: 0.75px;
+	border-color: #770000;
+}
+
+details a{
+	text-decoration: none;
+	color: black;
+}
+
+details li:hover{
+	background: #FFCCCC;
+}
+
+details a:hover{
+	color: red;
+}
+
+#sapxep{
+	position: relative;
+	top:-15px;
+	height: 32px;
+}
+
+#sapxep ul{
+	list-style: none;
+}
+
+#sapxep li{
+	display: inline-block;
+	background:#FFDAB9;
+	line-height: 30px;
+	position: relative;
+	left: 580px;
+	padding: 1px;
+}
+
+#sapxep a{
+	text-decoration: none;
+	font-size: 20px;
+	color: #0000CD;
+}
+
+
+
+#sapxep a:hover{
+	color:red;
+}
+
+#spbv{
+	width: 99%;
+	top:10px;
+	position: relative;
+	height: auto;
+	display: inline-block;
+	border-style: dashed;
+	border-left-color: #00ff00;
+	border-top-color: #FF6600;
+	border-right-color: #00ccff;
+	border-bottom-color: #FFcc00;
+}
+
+.hot{
+	list-style-type: none;
+	float: left;
+	height: 340px;
+	width: 22%;
+	padding: 11px;
+	margin-top: 20px;
+	margin-bottom: 8px;
+	margin-right: 13px;
+	margin-left: -8px;
+	position: relative;
+	left:20px;
+	background-color: #DDDDDD;
+}
+
+.hot a{
+	color: black;
+	position: relative;
+	left: -3.5px;
+}
+
+.hinh{
+	border-style: solid;
+	border-color: white;
+	width: 230px;
+	height: 200px;
+}
+
+.tensp{
+	width: 240px;
+	height: 80px;
+	text-align: left;
+	font-size: 20px;
+	font-weight: bold;
+	margin-top: -15px;
+	margin-left: 1px;
+}
+
+.gia{
+	text-align: center;
+	font-weight: bold;
+	font-size: 23px;
+	display: block;
+	color: red;
+	width: 236px;
+	height: 44px;
+}
+
+.gia1{
+	width: 96px;
+	margin:0px 13px 0px 0px;
+	position: relative;
+	color: red;
+	font-size: 23px;
+	float: left;
+}
+.giamgia1{
+ 	width: 96px;
+ 	margin-top: 23px;
+ 	position: relative;
+	color: #777777;
+	font-size: 22px;
+	float: left;
+	text-decoration: line-through; 
+	margin-left: 15px;
+}
+
+.sp{
+	
+	width: auto;
+	height: 95px;
+	margin-top: -3px;
+}
+
+#spbv .hot:hover{
+	box-shadow:0 3px 20px 0 rgba(0,0,0,0.2),0 3px 20px 0 rgba(0,0,0,0.19)
+}
+
+.pagination {
+  display: inline-block;
+  position: relative;
+  top:10px;
+  left: 900px;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.pagination a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+.discountpercent1{
+	position: relative;
+	font-size: 25px;
+	color: white;
+	border: solid;
+	background: red;
+	border-color:red;
+	text-align: center;
+	width: 150px;
+	overflow: hidden;
+	z-index: 1;
+	top: -368px;
+	left: -4px;
+}

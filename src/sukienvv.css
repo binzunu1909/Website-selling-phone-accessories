@@ -1,0 +1,108 @@
+#chung{
+	position: relative;
+	width: 107.5%;
+	height: 790px;
+	top:0;
+	float: right;
+	right: -3.75%;
+}
+
+#muc4{
+	float: left;
+	position: relative;
+	width: 1050px;
+	height: auto;
+	top:13px;
+	right: -1%;
+}
+
+#spbv{
+	width: 120%;
+	top:10px;
+	position: relative;
+	height: auto;
+	display: inline-block;
+	border-style: dashed;
+	border-left-color: #00ff00;
+	border-top-color: #FF6600;
+	border-right-color: #00ccff;
+	border-bottom-color: #FFcc00;
+}
+
+.hot{
+	list-style-type: none;
+	float: left;
+	height: 33%;
+	width: 22%;
+	padding: 11px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-right: 13px;
+	margin-left: -4px;
+	position: relative;
+	left:20px;
+	background-color: #DDDDDD;
+}
+
+.hot a{
+	color: black;
+}
+
+.hinh{
+	border-style: solid;
+	border-color: white;
+	width: 270px;
+	height: 220px;
+}
+
+.tensp{
+	width: 280px;
+	height: 43px;
+	text-align: left;
+	font-size: 18px;
+	font-weight: bold;
+	margin-top: -15px;
+	margin-left: 1px;
+}
+
+.gia{
+	text-align: center;
+	font-weight: bold;
+	font-size: 23px;
+	display: block;
+	color: red;
+	width: 236px;
+	height: 44px;
+}
+
+.sp{
+	
+	width: 292px;
+	height: 95px;
+	margin-top: -3px;
+}
+
+#spbv .hot:hover{
+	box-shadow:0 3px 20px 0 rgba(0,0,0,0.2),0 3px 20px 0 rgba(0,0,0,0.19)
+}
+
+.pagination {
+  display: inline-block;
+  position: relative;
+  top:10px;
+  left: 1080px;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.pagination a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}

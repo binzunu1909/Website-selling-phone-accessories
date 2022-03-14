@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<link rel="stylesheet" type="text/css" href="../css/suatt.css">
+</head>
+<body>
+	<form method="post">
+			<div id="muc">
+				<h2>Thông Tin Sản Phẩm</h2>
+				<ul>
+					<li>Ảnh sản phẩm</li>
+					<li>Tên sản phẩm</li>
+					<li>Loại sản phẩm</li>
+					<li>Giá sản phẩm</li>
+				</ul>
+			</div>
+			<div id="khung">			
+				<ul>
+					<form>
+					<li><input type="text" name="hinhsp" id="hinhsp" size="30" value="" placeholder=""></li>
+					<li><input type="text" name="tensp" id ="tensp" size="30" value="" placeholder="Loa Bluetooth iCutes MB-M818 Cún"></li>
+					<li><select name="sxgia" id="loai">
+							<option value="pkk" >Phụ kiện khác</option>
+						    <option value="bv">Bảo vệ </option>
+			    			<option value="tn">Tai nghe</option>
+			    			<option value="cs">Cáp sạc</option>
+					  	</select></li>
+					<li><input type="text" name="giasp" id="giasp" size="30" value="" placeholder="270.000đ"><span id="loihoten"></span></li>
+					<button type="submit" onclick="KiemTraDK();return false;">Thay Đổi</button>
+					</form>
+				</ul>
+			</div>
+	</form>
+</body>
+</html>

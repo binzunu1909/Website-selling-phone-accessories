@@ -1,0 +1,286 @@
+body{
+	background: #343434;
+	height: 1550px;
+	width: 1260px;
+	margin: 0px 40px;
+	position: relative;
+	font-family: Tahoma;
+}
+.active{
+	background-color: #0099FF;
+}
+#logo{
+	display: block;
+	clear: right;
+	background:#FFFFFF; 
+	float: left;
+	height: 120px;
+	width: 75%;
+	border-bottom: 2px solid #000000;
+}
+#dau{
+	display: block;
+	background: #FFFFFF;
+	height: 120px;
+	width: 25%;
+	float: right;
+	border-bottom: 2px solid #000000;
+}
+#menu{
+	display: block;
+	background: #E1E1E1;
+	height: 63px;
+	clear: left;
+}
+#noidung{
+	display: block;
+	width: 100%;
+	background:white;
+	height: 1500px;
+	float: right;
+}
+#dau ul{
+	margin: 0px;
+	padding: 20px 0px;
+	list-style-type: none;
+}
+#dau ul li{
+	font-size: 20px;
+	background: #FFF;
+	float: right;
+	height: auto;
+	width: auto;
+	margin: 0px 2px;
+}
+#dau ul li p{
+	margin: 9px 10px;
+	font-size: 25px;
+	font-weight: bold;
+}
+#dau ul li img{
+	width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+#dau ul li a{
+	color:#000000;
+	margin-left: 5px;
+	margin-right: 5px;
+	text-decoration: none;
+}
+#dau ul li a:hover{
+	color: #FF0000;
+}
+#menu ul{
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+#menu ul li {
+	display: inline-table;
+	background: #FFFFFF;
+	line-height: 50px;
+	width: 24.98%;
+	height: 10%;
+	font-weight: bolder;
+	border-right: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+	float: left;
+}
+#menu ul li a{
+	color: #343434;
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	
+}
+#menu ul li a img{
+	height: 30px;
+	width: 30px;
+	margin-right: 15px;
+	margin-left: 15px;
+	margin-top: 15px;
+}	
+#menu ul li a{
+	color: #000000;
+	text-align: left;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 25px;
+	display: block;
+	height: 100%;
+	line-height: 50px;
+}
+#noidung form{
+	text-align: right;
+	margin: 20px 160px;
+}
+#noidung form input{
+	font-size: 19px;
+	padding: 5px 8px;
+	background-color: #FFFFFF;
+	border: 1px solid #343434;
+}
+#themsp,#themtk{
+	text-decoration: none;
+	font-size: 25px;
+	background-color: #006400;
+	color: #FFFFFF;
+	padding: 5px 5px;
+}
+#themsp{
+	margin:0px 150px;
+}
+#themtk{
+	margin:0px 100px;
+}
+#themsp:hover,#themtk:hover{
+	color: : #FFFFFF;
+	background-color: #99CDEF;
+}
+
+#tksp button{	
+	font-size: 20px;
+	padding: 5px 8px 5px;
+} 
+#tksp button img{	
+	height: 15px;
+	width: 15px;
+}
+#boloc select {
+	margin: 5px 10px;
+    float: left;
+    font-size: 18px;
+}
+#boloc button img{
+	height: 20px;
+	width: 20px;
+}
+#boloc button{
+	float: left;
+    padding: 2px 5px 2px;
+    margin-top: 1px;
+}
+table{
+	border-collapse:collapse;
+	width: 100%;
+}
+th,td{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+#tieude{
+	font-size: 25px;
+	background-color: #5cb85c;
+	color:#FFFFFF;
+}
+#hinh img{
+	width: 100%;
+}
+#xoa{
+	background: #990000;
+	color: #FFFFFF;
+	border-radius: 3px;
+	font-size: 20px;
+	margin-left: 40px;
+}
+#sua{
+	background: #5cb85c;
+	color: #FFFFFF;
+	border-radius: 3px;
+	font-size: 20px;
+	margin-left: 40px;
+}
+#sua img{
+	height: 25px;
+	padding-top: 5px;
+}
+.mo{
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	display: none;
+	background-color: rgb(0,0,0); 
+	background-color: rgba(0,0,0,9); 
+	z-index: 10;
+}	
+.suasp{
+	top: 0px;
+	left: 300px;
+	-webkit-animation-name:zoom;
+	-webkit-animation-duration:0.6s;
+	animation-name:zoom;
+	animation-duration:0.6s;
+	z-index: -1;
+}
+.themtk{
+	top: 0px;
+	left: 300px;
+	-webkit-animation-name:zoom;
+	-webkit-animation-duration:0.6s;
+	animation-name:zoom;
+	animation-duration:0.6s;
+	z-index: -1;
+	width: 100%;
+}
+#thoat{
+	display: block;
+	color: #FFFFFF;
+	font-size: 40px;
+    top: -0px;
+    position: absolute;
+    left: 482px;
+    background: #006400;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+#xoa img{
+	padding-top: 5px;
+	height: 25px;
+}
+#ten,#tongtien,#gia,#loai{
+	font-size: 20px;
+	text-align: center;
+}
+#sanpham1,#sanpham2,#sanpham3,#sanpham4,#sanpham5,#sanpham6,#sanpham7,#sanpham8{
+	border-bottom: 2px solid #5cb85c;
+}
+#tk1,#tk2,#tk3,#tk4,#tk5,#tk6,#tk7,#tk8{
+	border-bottom: 1px solid #5cb85c;
+}
+#dh1,#dh2,#dh3,#dh4,#dh5,#dh6,#dh7,#dh8{
+	border-bottom: 1px solid #5cb85c;
+}
+#trang{
+	font-size: 20px;
+    text-decoration: none;
+    margin-right: 10px;
+    color: #000000;
+    font-weight: bold;
+    border: 2px solid black;
+    height: 40px;
+    width: 40px;
+    padding: 1px 7px;
+}
+
+#tk,#mk,#email,#sdt,#tt,#madh,#tennguoinhan,#diachi,#soluong,#sanphammua{
+	font-size: 20px;
+	text-align: center;	
+}
+
+#them{
+	font-size: 25px;
+    cursor: pointer;
+    background-color: #006400;
+    width: 235px;
+    padding: 4px;
+    color: white;
+    border-radius: 6px;
+    margin-left: 730px;
+    text-align: center;
+}
+#khoa{
+	text-align: center;
+}

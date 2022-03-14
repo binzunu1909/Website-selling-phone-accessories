@@ -1,0 +1,94 @@
+table{
+	border-collapse:collapse;
+	width: 100%;
+	font-family: Tahoma;
+}
+#tieude{
+	text-align: center;
+	font-size: 20px;
+	background-color: #5cb85c;
+	color: #FFFFFF;
+}
+#hinh img{
+	width: 50%;
+}
+#sanpham1,#sanpham2,#sanpham3{
+	border-bottom: 1px solid #5cb85c;
+}
+#tongcong{
+	border-bottom: 3px solid #5cb85c;
+}
+#ttthanhtoan{
+	border: 3px solid #5cb85c;
+}
+#ten,#tongtien,#gia1,#thanhtien1,#gia2,#thanhtien2,#gia3,#thanhtien3{
+	font-size: 18px;
+	text-align: center;
+}
+#gia1,#gia2,#gia3{
+	margin-left: 35px;
+}
+#ten{
+	width: 95%;
+}
+#thanhtien1,#thanhtien2,#thanhtien3{
+	margin-left: 120px;
+}
+#soluong1,#soluong2,#soluong3{
+	font-size: 18px;
+	margin-left: 20px;
+	text-align: center;
+	width: 50%;
+}
+#tt{
+	font-size: 25px;
+	font-weight: bold;
+}
+#tongtien{
+	font-size: 25px;
+	font-weight: bold;
+	margin-left: 40px;
+}
+#xoa{
+	background: #990000;
+	color: #FFFFFF;
+	border-radius: 3px;
+	font-size: 20px;
+}
+#xoa img{
+	padding-top: 5px;
+	height: 25px;
+}
+#trong{
+	display: none;
+	text-align: center;
+	color: #006400;
+}
+#trong h1{
+	font-size: 35px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+#trong a{
+	margin-top: 20px;
+	background: orange;
+    color: white;
+    text-decoration: none;
+    font-size: 35px;
+    border-radius: 8px;
+    padding: 10px 10px;
+}
+.lichsu{
+	text-align: left;
+	font-size: 30px;
+	margin-right: 20px;
+}
+.lichsu a{
+	text-decoration: none;
+	color: #990000;
+}
+#ngay,#diachi,#tennguoinhan,#thanhtoan{
+	text-align: center;
+	font-size: 25px;
+	color: red;
+}

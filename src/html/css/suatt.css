@@ -1,0 +1,82 @@
+ .active{
+	height: 660px;
+}
+#dangky form{
+}
+#muc{
+	display: block;
+	float: left;
+	height: 601px;
+	width: 30%;
+	background: #FFFFFF;
+	margin: 10px 0px;
+}
+#muc h2{
+	text-align: center;
+	font-size: 30px;
+	color: #343434;
+}
+#muc ul{
+	list-style-type: none;
+	text-align: right;
+	font-size: 25px;
+	line-height: 102px;
+}
+#khung{
+	display: block;
+	margin: 10px 0px;
+	float: left;
+	height: auto;
+	position: relative;
+	width: 50%;
+	background: #FFFFFF;
+	padding-top: 5.9%;	
+	padding-bottom: 15.9%;
+	padding-right: 140px;
+}
+#khung ul{
+	list-style-type: none;
+}
+#khung ul li input{
+	font-size: 20px;
+	padding: 5px;
+	border: 2px solid #5cb85c;
+	border-radius: 5px;
+}
+#khung ul li{
+	margin-top: 67px;
+	font-size: 20px;
+}
+#khung ul button{
+	top: 480px;
+	left: 100px;
+	position: absolute;
+	font-size: 20px;
+	color: #FFFFFF;
+	background: #006400;
+	padding: 8px 50px 8px 50px;
+}
+#khung a{
+	text-decoration: none;
+	font-size: 35px;
+	margin-left: 85px;
+	color: #990000;
+}
+#loitk,#loimk,#loimk2,#loihoten,#loiemail,#loidiachi,#loidienthoai,#loingaysinh{
+	color: red;
+	font-size: 23px;
+	margin-left: 25px;
+	margin-top: 5px;
+}
+#loingaysinh{
+	margin-left:128px; 
+}
+#loaisp{
+	border-radius: 5px;
+	padding: 5px 105px;
+	font-size: 20px;
+}
+.loi{
+	color: #990033;
+	font-size: 20px;
+}

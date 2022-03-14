@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GioHang</title>
+	<link rel="stylesheet" type="text/css" href="../css/giohang.css">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <script type="text/javascript" src="../js/kiemtra.js"></script>
+</head>
+<body>
+  <div class="lichsu"><a href="../pk.html" target="_blank" style="margin-right: 960px;">Trang chủ</a> <a href="lichsumuahang.html" target="_blank">Lịch sử mua hàng</a> </div>
+  <div class="container"> 
+ <table id="thongtin" class="table table-hover table-condensed"> 
+   <tr id="tieude"> 
+   	<th style="width:10%">Hình</th>
+    <th style="width:40%" >Tên sản phẩm</th> 
+    <th style="width:10%">Giá</th> 
+    <th style="width:8%">Số lượng</th> 
+    <th style="width:22%" class="text-center">Thành tiền</th> 
+    <th style="width:10%"></th> 
+   </tr> 
+  
+  	<tr id="sanpham1"> 
+  	<td>
+     <div  id="hinh"><img src="../img/loaBT.gif"></div>
+  	</td>
+   <td> 
+     <div id="ten"><p>Loa Bluetooth iCutes MB-M818 Cún</p></div> 
+     </div> 
+   </td> 
+   <td><span id="gia1">270.000</span><span id="tiente">đ</span></td> 
+   <td>
+    <div id="chinhsl">
+       <button id="tru1" onclick="giam1()">-</button>
+      <p id="soluong1">1</p>
+      <button id="cong1" onclick="tang1()">+</button>
+    </div>
+   </td> 
+   <td ><span id="thanhtien1">270.000</span><span id="tiente">đ</span></td> 
+   <td class="actions" data-th="">
+    <button id="xoa" onclick="thongbao1()"><img src="../img/icon/icon-thungrac.gif"></button> 
+   </td> 
+  </tr>  
+  
+  <tr id="sanpham2" > 
+  	<td>
+     <div  id="hinh"><img src="../img/pinduphong6.gif"></div>
+  	</td>
+   <td> 
+     <div id="ten"><p>Pin sạc dự phòng 7.500 mAh AVA Cat 3S Cam Trắng</p></div> 
+     </div> 
+   </td> 
+   <td><span id="gia2">240.000</span><span id="tiente">đ</span></td> 
+   <td>
+     <div id="chinhsl">
+       <button id="tru2" onclick="giam2()">-</button>
+      <p id="soluong2">2</p>
+      <button id="cong2" onclick="tang2()">+</button>
+    </div>
+   </td> 
+   <td><span id="thanhtien2">480.000</span><span id="tiente">đ</span></td> 
+   <td class="actions" data-th="">
+    <button id="xoa" onclick="thongbao2()"><img src="../img/icon/icon-thungrac.gif"></button> 
+   </td> 
+  </tr>  
+
+   <tr id="sanpham3"> 
+  	<td>
+     <div  id="hinh"><img src="../img/taingheAQ.gif"></div>
+  	</td>
+   <td> 
+     <div id="ten"><p>Tai nghe EP Awei Q19Hi</p></div> 
+     </div> 
+   </td> 
+   <td><span id="gia3">130.000</span><span id="tiente">đ</span></td> 
+   <td>
+     <div id="chinhsl">
+       <button id="tru3" onclick="giam3()">-</button>
+      <p id="soluong3">1</p>
+      <button id="cong3" onclick="tang3()">+</button>
+    </div>
+   </td> 
+   <td><span id="thanhtien3">130.000</span><span id="tiente">đ</span></td> 
+   <td class="actions" data-th="">
+    <button id="xoa" onclick="thongbao3()"><img src="../img/icon/icon-thungrac.gif"></button> 
+   </td> 
+  </tr> 
+   <tr id="cuoi"> 
+    <td colspan="4"></td> 
+    <td ><span id="tt">Tổng</span><span id="tongtien">880.000</span><span id="tiente" style="font-weight: bold; font-size: 25px;">đ</span></td> 
+    <td id="thanhtoan"><a href="thanhtoan.html" target="_blank">Thanh toán</a></td> 
+   </tr> 
+ </table>
+ <div id="trong">
+   <h1>Giỏ hàng hiện đang trống bạn có muốn thêm sản phẩm vào giỏ hàng</h1>
+   <a href="sanpham.html">Tiếp tục mua hàng</a>
+ </div>
+</div>
+</body>
+</html>
